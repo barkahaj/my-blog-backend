@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: strapi-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run develop
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: DATABASE_CLIENT
+        value: sqlite
