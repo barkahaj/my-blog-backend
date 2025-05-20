@@ -3,7 +3,7 @@ services:
     name: strapi-backend
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: echo "Skipping build step"
     startCommand: npm run develop
     envVars:
       - key: NODE_VERSION
