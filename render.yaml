@@ -3,7 +3,7 @@ services:
     name: strapi-backend
     env: node
     plan: free
-    buildCommand: echo "Skipping build step"
+    buildCommand: echo "Skip build to avoid memory issues"
     startCommand: npm run develop
     envVars:
       - key: NODE_VERSION
